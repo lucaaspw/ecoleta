@@ -1,0 +1,62 @@
+
+/* Responsivo da home */
+@media (max-width: 900px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home .content header a{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    #page-home main{
+        align-items: center;
+    }
+}
+/* Responsivo da home */
+/* Responsivo create point */
+@media(max-width: 768px){
+    #page-create-point header{
+        padding-top: 20px;
+    }
+    form{
+        padding: 20px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    form fieldset{
+        max-width: 100%;
+    }
+}
+@media(max-width: 500px){
+    #page-create-point{
+        padding: 20px 0;
+    }
+    form{
+        padding: 20px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    form fieldset{
+        max-width: 100%;
+    }
+    form fieldset .field{
+        display: flex;
+        flex-direction: column;
+    }
+    form fieldset .field + .field{
+        margin-left: 0;
+    }
+    form fieldset .field-group{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    
+}

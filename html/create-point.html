@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/create-point.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Next Level Week</title>
+</head>
+
+<body>
+    <div id="page-create-point">
+            <header>
+                <img src="/image/icones/logo.svg" alt="Logomarca">
+                <a href="#">
+                    <img src="../image/icones/arrow-left.svg"/> Voltar para home
+                </a>
+            </header>     
+
+            <form action="">
+                <h2>Cadastro do ponto de coleta</h2>
+                <fieldset>
+                    <legend>
+                        <h3>Dados da entidade</h3>
+                    </legend>
+                    <div class="field">
+                        <label for="name">Nome da entidade</label>
+                        <input type="name" name="name" id="name" required>
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="adress">Endereço</label>
+                            <input type="text" name="adress" required>
+                        </div>
+                        <div class="field">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" name="complemento" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Estado</label>
+                            <select name="uf">
+                                <option class="firstOption"  value="primeiro">Selecione o estado</option>
+                            </select>
+                            <input type="hidden" name="state">
+                        </div>
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled>
+                                <option value="">Selecione a cidade</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit">Cadastrar ponto de coleta</button>
+            </form>
+    </div>
+    <script src="../js/create-point.js"></script>
+</body>
+</html>
