@@ -25,6 +25,7 @@ form{
     border-radius: 8px;
     margin: 0 auto;
 }
+
 form fieldset{
     border: none;
     padding: 0;
@@ -61,6 +62,42 @@ form fieldset .field-group{
     display: flex;
     justify-content: space-between;
 }
+
+/* Item de coleta */
+
+form fieldset legend{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form fieldset legend p{
+    color: #999;
+    font-size: 14px;
+}
+form fieldset .itens{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+form fieldset .itens li{
+   background-color: rgb(238, 238, 238);
+   border-radius: 8px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 180px;
+   padding: 30px;
+   cursor: pointer;
+}
+.button-group{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 form button{
     padding: 10px 20px;
     border-radius: 3px;
@@ -74,4 +111,7 @@ form button{
 }
 form button:hover{
     opacity: .8;
+}
+form fieldset .itens li.active{
+    background: rgb(200, 255, 145);
 }

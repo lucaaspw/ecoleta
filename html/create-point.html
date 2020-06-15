@@ -35,15 +35,15 @@
                             <input type="text" name="adress" required>
                         </div>
                         <div class="field">
-                            <label for="complemento">Complemento</label>
-                            <input type="text" name="complemento" required>
+                            <label for="numero">Complemento</label>
+                            <input type="text" name="numero" required>
                         </div>
                     </div>
                     <div class="field-group">
                         <div class="field">
                             <label for="state">Estado</label>
                             <select name="uf">
-                                <option class="firstOption"  value="primeiro">Selecione o estado</option>
+                                <option value="">Selecione o estado</option>
                             </select>
                             <input type="hidden" name="state">
                         </div>
@@ -55,7 +55,41 @@
                         </div>
                     </div>
                 </fieldset>
-                <button type="submit">Cadastrar ponto de coleta</button>
+                <fieldset>
+                    <legend>
+                       <h2>Itens de Coleta</h2> 
+                       <p>Selecione um ou mais itens abaixo</p>
+                    </legend>
+                    <div class="itens">
+                        <li data-id="1">
+                            <img src="/image/icones/baterias.svg" alt="Baterias">
+                            <span>Baterias</span>
+                        </li>
+                        <li data-id="2">
+                            <img src="/image/icones/lampadas.svg" alt="Lâmpada">
+                            <span>Lâmpada</span>
+                        </li>
+                        <li data-id="3">
+                            <img src="/image/icones/oleo.svg" alt="Óleo">
+                            <span>Óleo</span>
+                        </li>
+                        <li data-id="4">
+                            <img src="/image/icones/papeis-papelao.svg" alt="Papeis e papelão">
+                            <span>Papéis e papelão</span>
+                        </li>
+                        <li data-id="5">
+                            <img src="/image/icones/organicos.svg" alt="Organicos">
+                            <span>Orgânicos</span>
+                        </li>
+                        <li data-id="6">
+                            <img src="/image/icones/eletronicos.svg" alt="Eletrônicos">
+                            <span>Eletrônicos</span>
+                        </li>
+                    </div>
+                </fieldset>
+                <div class="button-group">
+                    <button type="submit">Cadastrar ponto de coleta</button>
+                </div>
             </form>
     </div>
     <script src="../js/create-point.js"></script>

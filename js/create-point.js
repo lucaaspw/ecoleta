@@ -13,7 +13,6 @@ ufState();
 
 document.querySelector('[name=uf]').addEventListener('change', getCities)
 
-var optionValue = document.querySelector('.firstOption')
 function getCities(event){
     const citySelect = document.querySelector('[name=city]');
     const inputState = document.querySelector('[name=state]');
@@ -22,16 +21,15 @@ function getCities(event){
     inputState.value = event.target.options[indexOfState].text
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios
-    `
-    citySelect.innerHTML = "<option value>Selecione a cidade</option>"
-    if(optionValue.value == 'primeiro'){
-        citySelect.disabled = true;
-    }
+    `;
+    citySelect.innerHTML = "<option value>Selecione a cidade</option>";
+    citySelect.disabled = true;
+ 
     fetch(url).then(res => res.json())
     .then( cities => {
         
         for(const city of cities){
-            citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+            citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
         }
             citySelect.disabled = false;
     })
