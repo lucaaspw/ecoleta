@@ -34,3 +34,15 @@ function getCities(event){
             citySelect.disabled = false;
     })
 }
+
+// Items de coleta
+// Pegando todos os items de coleta
+
+const items = document.querySelectorAll('.itens li');
+
+for(const item of items){
+    item.addEventListener('click', selectedItem)
+}
+function selectedItem(event){
+    console.log(event.target);
+}

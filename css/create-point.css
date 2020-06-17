@@ -93,6 +93,13 @@ form fieldset .itens li{
    padding: 30px;
    cursor: pointer;
 }
+form fieldset .itens li span{
+    color: var(--title-color);
+    pointer-events: none;
+}
+form fieldset .itens li img{
+    pointer-events: none;
+}
 .button-group{
     width: 100%;
     display: flex;
@@ -114,4 +121,5 @@ form button:hover{
 }
 form fieldset .itens li.active{
     background: rgb(200, 255, 145);
+    border: 2px solid rgb(137, 250, 24);
 }
