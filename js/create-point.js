@@ -43,6 +43,38 @@ const items = document.querySelectorAll('.itens li');
 for(const item of items){
     item.addEventListener('click', selectedItem)
 }
+const itemsCollected = document.querySelector('[name=items]')
+let itemsSelected = []
+
 function selectedItem(event){
-    console.log(event.target);
+    const itemLi = event.target;
+    // Adicionar ou remover classes com javascript
+    itemLi.classList.toggle('active');
+
+    const itemId = itemLi.dataset.id
+
+    // Verificar se existe algum item selecionado
+    // Se sim, pegar os itens selecionados
+    const alreadySelected = itemsSelected.findIndex(function(item){
+        const itemFound = item == itemId; //Isso retornará true ou false
+        return itemFound;
+    })
+
+    //Não deixar que o item se repita
+    if(alreadySelected >= 0){
+        //tirar-lo da seleção
+        const filteredItems = itemsSelected.filter(function(item){
+            const itemsIsDifferent = item != itemId; // item falso
+            return itemsIsDifferent;
+        })
+        itemsSelected = filteredItems;
+    }else{
+        //Se não estiver selecionado, adicionar na seleção
+        itemsSelected.push(itemId);
+    }
+
+   console.log(itemsSelected); 
+    // Atualizar o campo escondido com os itens selecionados
+
+    itemsCollected.value = itemsSelected;
 }
