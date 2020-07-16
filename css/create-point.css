@@ -92,6 +92,11 @@ form fieldset .itens li{
    height: 180px;
    padding: 30px;
    cursor: pointer;
+   border: 2px solid transparent;
+}
+form fieldset .itens li.active{
+    background: rgba(135, 255, 199, 0.822);
+    border: 2px solid rgba(21, 201, 132, 0.849);
 }
 form fieldset .itens li span{
     color: var(--title-color);
@@ -119,7 +124,4 @@ form button{
 form button:hover{
     opacity: .8;
 }
-form fieldset .itens li.active{
-    background: rgb(200, 255, 145);
-    border: 2px solid rgb(137, 250, 24);
-}
+
