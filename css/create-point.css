@@ -2,6 +2,7 @@
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
 }
 
 #page-create-point header{
@@ -124,4 +125,43 @@ form button{
 form button:hover{
     opacity: .8;
 }
+<<<<<<< HEAD
+=======
+/* Modal cadastro concluído */
+
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.925);
+    display: none;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+.modal .content-modal a{
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.modal .content-modal h3{
+    color: #fff;
+}
+.modal .content-modal .cadastro-concluido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+>>>>>>> 4fc695c6e2acaab0736832a0ce4b1179d9f3bd6a
 

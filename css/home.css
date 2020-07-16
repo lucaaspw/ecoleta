@@ -1,8 +1,8 @@
 #page-home{
     height: 100vh;
-    background: url('/image/icones/home-background.svg') no-repeat ;
+    background: url('../image/icones/home-background.svg') no-repeat ;
     background-position: 35vw -100%;
-    
+    position: relative;
 }
 #page-home .content{
     width: 90%;
@@ -67,6 +67,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   pointer-events: none;
 }
 #page-home main a span::after{
     content: '';
@@ -76,5 +77,57 @@
 }
 #page-home main a strong{
     flex: 1;
-    text-align: center;
+   pointer-events: none;
+   text-align: center;
+}
+.flex{
+    display: flex!important;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.925);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal .content-modal a{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    justify-content: space-between;
+    color: #fff;
+}
+.modal .content-modal{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal .content-modal h3{
+    color: #fff;
+}
+.modal .content-modal form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.modal .content-modal input{
+    border: none;
+    width: 100%;
+    outline: transparent;
+    padding: 10px 14px;
+    background: #e9e6e6;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.modal .content-modal input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #14b35c;
 }
