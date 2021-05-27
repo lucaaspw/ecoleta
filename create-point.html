@@ -12,102 +12,99 @@
 
 <body>
     <div id="page-create-point">
-            <header>
-                <img src="image/icones/logo.svg" alt="Logomarca">
-                <a href="index.html">
-                    <img src="image/icones/arrow-left.svg"/> Voltar para home
-                </a>
-            </header>     
+        <header>
+            <img src="image/icones/logo.svg" alt="Logomarca">
+            <a href="index.html">
+                <img src="image/icones/arrow-left.svg" /> Voltar para home
+            </a>
+        </header>
 
-            <form action="">
-                <h2>Cadastro do ponto de coleta</h2>
-                <fieldset>
-                    <legend>
-                        <h3>Dados da entidade</h3>
-                    </legend>
+        <form action="">
+            <h2>Cadastro do ponto de coleta</h2>
+            <fieldset>
+                <legend>
+                    <h3>Dados da entidade</h3>
+                </legend>
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="name" name="name" id="name" required>
+                </div>
+                <div class="field-group">
                     <div class="field">
-                        <label for="name">Nome da entidade</label>
-                        <input type="name" name="name" id="name" required>
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" required>
                     </div>
-                    <div class="field-group">
-                        <div class="field">
-                            <label for="adress">Endereço</label>
-                            <input type="text" name="adress" required>
-                        </div>
-                        <div class="field">
-                            <label for="numero">Complemento</label>
-                            <input type="text" name="numero" required>
-                        </div>
+                    <div class="field">
+                        <label for="numero">Complemento</label>
+                        <input type="text" name="numero" required>
                     </div>
-                    <div class="field-group">
-                        <div class="field">
-                            <label for="state">Estado</label>
-                            <select name="uf">
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf">
                                 <option value="">Selecione o estado</option>
                             </select>
-                            <input type="hidden" name="state">
-                        </div>
-                        <div class="field">
-                            <label for="city">Cidade</label>
-                            <select name="city" disabled>
+                        <input type="hidden" name="state">
+                    </div>
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled>
                                 <option value="">Selecione a cidade</option>
                             </select>
-                        </div>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                       <h2>Itens de Coleta</h2> 
-                       <p>Selecione um ou mais itens abaixo</p>
-                    </legend>
-                    <div class="itens">
-                        <li data-id="1">
-<<<<<<< HEAD:html/create-point.html
-                            <img src="/image/icones/baterias.svg" alt="Baterias">
-=======
-                            <img src="image/icones/baterias.svg" alt="Baterias">
->>>>>>> 4fc695c6e2acaab0736832a0ce4b1179d9f3bd6a:create-point.html
-                            <span>Baterias</span>
-                        </li>
-                        <li data-id="2">
-                            <img src="image/icones/lampadas.svg" alt="Lâmpada">
-                            <span>Lâmpada</span>
-                        </li>
-                        <li data-id="3">
-                            <img src="image/icones/oleo.svg" alt="Óleo">
-                            <span>Óleo</span>
-                        </li>
-                        <li data-id="4">
-                            <img src="image/icones/papeis-papelao.svg" alt="Papeis e papelão">
-                            <span>Papéis e papelão</span>
-                        </li>
-                        <li data-id="5">
-                            <img src="image/icones/organicos.svg" alt="Organicos">
-                            <span>Orgânicos</span>
-                        </li>
-                        <li data-id="6">
-                            <img src="image/icones/eletronicos.svg" alt="Eletrônicos">
-                            <span>Eletrônicos</span>
-                        </li>
-                    </div>
-                    <input type="hidden" name="items">
-                </fieldset>
-                <div class="button-group">
-                    <button type="submit">Cadastrar ponto de coleta</button>
                 </div>
-            </form>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Itens de Coleta</h2>
+                    <p>Selecione um ou mais itens abaixo</p>
+                </legend>
+                <div class="itens">
+                    <li data-id="1">
+                        <img src="/image/icones/baterias.svg" alt="Baterias">
+                        <span>Baterias</span>
+                    </li>
+                    <li data-id="2">
+                        <img src="image/icones/lampadas.svg" alt="Lâmpada">
+                        <span>Lâmpada</span>
+                    </li>
+                    <li data-id="3">
+                        <img src="image/icones/oleo.svg" alt="Óleo">
+                        <span>Óleo</span>
+                    </li>
+                    <li data-id="4">
+                        <img src="image/icones/papeis-papelao.svg" alt="Papeis e papelão">
+                        <span>Papéis e papelão</span>
+                    </li>
+                    <li data-id="5">
+                        <img src="image/icones/organicos.svg" alt="Organicos">
+                        <span>Orgânicos</span>
+                    </li>
+                    <li data-id="6">
+                        <img src="image/icones/eletronicos.svg" alt="Eletrônicos">
+                        <span>Eletrônicos</span>
+                    </li>
+                </div>
+                <input type="hidden" name="items">
+            </fieldset>
+            <div class="button-group">
+                <button type="submit">Cadastrar ponto de coleta</button>
+            </div>
+        </form>
     </div>
-    <div class="modal">   
+    <div class="modal">
         <div class="content-modal">
             <a href="create-point.html">
-                <img src="image/icones/arrow-left.svg"/> Voltar
+                <img src="image/icones/arrow-left.svg" /> Voltar
             </a>
             <div class="cadastro-concluido">
                 <img src="image/icones/check.svg" alt="">
                 <h3>Cadastro Concluído!!!</h3>
-            </div>  
+            </div>
         </div>
     </div>
     <script src="js/create-point.js"></script>
 </body>
+
 </html>

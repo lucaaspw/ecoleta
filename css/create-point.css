@@ -1,25 +1,28 @@
-#page-create-point{
+#page-create-point {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
 }
 
-#page-create-point header{
+#page-create-point header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
 }
-#page-create-point header a{
+
+#page-create-point header a {
     display: flex;
     align-items: center;
     color: var(--title-color);
 }
-#page-create-point header a img{
+
+#page-create-point header a img {
     margin-right: 10px;
 }
-form{
+
+form {
     max-width: 800px;
     padding: 60px;
     background: #ffffff;
@@ -27,91 +30,106 @@ form{
     margin: 0 auto;
 }
 
-form fieldset{
+form fieldset {
     border: none;
     padding: 0;
     margin: 50px 0;
 }
-form fieldset .field{
+
+form fieldset .field {
     display: flex;
     flex-direction: column;
     margin: 8px 0;
     flex: 1;
 }
-form fieldset .field + .field{
+
+form fieldset .field+.field {
     margin-left: 20px;
 }
-form fieldset .field label{
+
+form fieldset .field label {
     margin-bottom: 5px;
     color: #7a7a7a;
     font-size: 14px;
 }
-form fieldset .field input, select{
+
+form fieldset .field input,
+select {
     border: none;
     outline: transparent;
     padding: 16px 24px;
     background: #e9e6e6;
     border-radius: 3px;
 }
-form fieldset .field select{
+
+form fieldset .field select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-form fieldset .field-group{
+form fieldset .field-group {
     display: flex;
     justify-content: space-between;
 }
 
+
 /* Item de coleta */
 
-form fieldset legend{
+form fieldset legend {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-form fieldset legend p{
+
+form fieldset legend p {
     color: #999;
     font-size: 14px;
 }
-form fieldset .itens{
+
+form fieldset .itens {
     width: 100%;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
 }
-form fieldset .itens li{
-   background-color: rgb(238, 238, 238);
-   border-radius: 8px;
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: space-between;
-   height: 180px;
-   padding: 30px;
-   cursor: pointer;
-   border: 2px solid transparent;
+
+form fieldset .itens li {
+    background-color: rgb(238, 238, 238);
+    border-radius: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    padding: 30px;
+    cursor: pointer;
+    border: 2px solid transparent;
 }
-form fieldset .itens li.active{
+
+form fieldset .itens li.active {
     background: rgba(135, 255, 199, 0.822);
     border: 2px solid rgba(21, 201, 132, 0.849);
 }
-form fieldset .itens li span{
+
+form fieldset .itens li span {
     color: var(--title-color);
     pointer-events: none;
 }
-form fieldset .itens li img{
+
+form fieldset .itens li img {
     pointer-events: none;
 }
-.button-group{
+
+.button-group {
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-form button{
+
+form button {
     padding: 10px 20px;
     border-radius: 3px;
     border: 0;
@@ -122,15 +140,15 @@ form button{
     font-weight: bold;
     transition: opacity .3s;
 }
-form button:hover{
+
+form button:hover {
     opacity: .8;
 }
-<<<<<<< HEAD
-=======
+
+
 /* Modal cadastro concluído */
 
-
-.modal{
+.modal {
     position: absolute;
     top: 0;
     left: 0;
@@ -143,7 +161,8 @@ form button:hover{
     position: fixed;
     align-items: center;
 }
-.modal .content-modal a{
+
+.modal .content-modal a {
     top: 50px;
     left: 50px;
     position: absolute;
@@ -154,14 +173,13 @@ form button:hover{
     color: #fff;
 }
 
-.modal .content-modal h3{
+.modal .content-modal h3 {
     color: #fff;
 }
-.modal .content-modal .cadastro-concluido{
+
+.modal .content-modal .cadastro-concluido {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
->>>>>>> 4fc695c6e2acaab0736832a0ce4b1179d9f3bd6a
-
